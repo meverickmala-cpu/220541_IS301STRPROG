@@ -7,7 +7,7 @@
         4. Compute subtotal, tax, and final total.
         5. Display formatted bill.
     Developed and edited by: Vincent Mala
-    Date: 03/01/2026
+    Date: 03/03/2026
 
 */
 
