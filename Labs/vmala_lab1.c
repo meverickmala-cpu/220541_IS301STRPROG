@@ -58,19 +58,25 @@ int main(){
     tax = subtotal * TAX_RATE;
     total = subtotal + tax;
 
-    /* ---- OUTPUT ---- */
-    printf("\nQTY  DESCRIPTION        UNIT PRICE   TOTAL PRICE\n");
-    printf("----------------------------------------------------------\n");
 
-    printf("%2d   TV                 %.2f        %.2f\n", tvQty, TV_PRICE, tvTotal);
-    printf("%2d   Monitor            %.2f        %.2f\n", monitorQty, MONITOR_PRICE, monitorTotal);
-    printf("%2d   Flash Drive        %.2f        %.2f\n", flashQty, FLASH_PRICE, flashTotal);
-    printf("%2d   Hard Drive         %.2f        %.2f\n", hardQty, HARD_PRICE, hardTotal);
-    printf("%2d   DeskJet Printer    %.2f        %.2f\n", printerQty, PRINTER_PRICE, printerTotal);
+    /* -------- OUTPUT -------- */
 
-    printf("----------------------------------------------------------\n");
-    printf("Subtotal: %.2f\n", subtotal);
-    printf("Tax (8.35%%): %.2f\n", tax);
-    printf("Total: %.2f\n", total);
+printf("\n");
+printf("QTY   DESCRIPTION      UNIT PRICE      TOTAL PRICE\n");
+printf("------------------------------------------------------------\n");
+
+printf("%-5d %-16s %10.2f %15.2f\n", tvQty, "TV", 400.00, tvTotal);
+printf("%-5d %-16s %10.2f %15.2f\n", monitorQty, "Monitor", 220.00, monitorTotal);
+printf("%-5d %-16s %10.2f %15.2f\n", flashQty, "Flash Drive", 35.20, flashTotal);
+printf("%-5d %-16s %10.2f %15.2f\n", hardQty, "Hard Drive", 150.00, hardTotal);
+printf("%-5d %-16s %10.2f %15.2f\n", printerQty, "Deskjet Printer", 300.00, printerTotal);
+
+printf("\n");
+printf("                                   ----------------\n");
+
+printf("%-35s %15.2f\n", "Subtotal:", subtotal);
+printf("%-35s %15.2f\n", "Tax:", tax);
+printf("%-35s %15.2f\n", "Total:", total);
+printf("------------------------------------------------------------\n");
 return 0;
 }
